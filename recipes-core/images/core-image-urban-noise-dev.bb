@@ -3,6 +3,15 @@ is suitable for development work."
 
 require core-image-minimal.bb
 
-IMAGE_INSTALL += "libpd-dev libpd-dbg adb alsa-lib alsa-utils"
+IMAGE_INSTALL += "\
+  pd
+  libpd-dev \
+  libpd-dbg \
+  alsa-lib \
+  alsa-utils \
+  adb \
+  git \
+  strace \
+"
 
 IMAGE_FEATURES += "dev-pkgs"
