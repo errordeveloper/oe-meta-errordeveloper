@@ -1,15 +1,13 @@
 DESCRIPTION = "A small image just capable of allowing a device to boot and \
 is suitable for development work."
 
-require core-image-minimal.bb
+require errordeveloper-base-image.bb
 
-IMAGE_INSTALL += "\
-  pd
-  libpd-dev \
-  libpd-dbg \
+IMAGE_INSTALL += " \
+  pd \
+  supercollider \
   alsa-lib \
   alsa-utils \
-  adb \
   git \
   strace \
 "
